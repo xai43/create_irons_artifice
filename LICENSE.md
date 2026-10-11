@@ -6,6 +6,7 @@ All Rights Reserved Copyright (c) Takhr
 This license applies to any files under the following directories:
 
     ./src/main/resources/assets/create_irons_artifice
+    ./src/main/resources/data/
 
 ## Code License (MIT)
 
