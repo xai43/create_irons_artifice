@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "G": {
+      "tag": "c:nuggets/gold"
+    },
+    "*": {
+      "item": "irons_artifice:blackpowder"
+    },
+    "B": {
+      "item": "irons_artifice:bullet"
+    }
+  },
+  "pattern": [
+    " G#",
+    "*BG",
+    " * "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:enchanted_bullet_modifier"
+  }
+}

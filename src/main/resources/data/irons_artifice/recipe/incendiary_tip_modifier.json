@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "irons_artifice:blackpowder"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "pattern": [
+    " B ",
+    " N ",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:incendiary_tip_modifier"
+  }
+}

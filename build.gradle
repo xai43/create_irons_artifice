@@ -26,10 +26,6 @@ sourceSets.main.resources {
     exclude("src/generated/**/.cache") // datagen cache files
 }
 
-repositories {
-    // Add here additional repositories if required by some of the dependencies below.
-}
-
 base {
     archivesName = mod_id
 }
@@ -41,10 +37,10 @@ neoForge {
     // Specify the version of NeoForge to use.
     version = project.neo_version
 
-    parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
-    }
+    //parchment {
+    //    mappingsVersion = project.parchment_mappings_version
+    //    minecraftVersion = project.parchment_minecraft_version
+    //}
 
     // This line is optional. Access Transformers are automatically detected
     // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
@@ -115,28 +111,34 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+repositories {
+    maven {url = "https://maven.createmod.net"}
+    maven {url = "https://maven.realrobotix.me/master"}
+    maven { url = "https://maven.ithundxr.dev/snapshots" }
+    maven {name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'GeckoLib'
+                url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+            }
+        }
+        filter {
+            includeGroupAndSubgroups('software.bernie.geckolib')
+            includeGroup "curse.maven" }
+    }
+    maven {
+        url "https://cursemaven.com"
+    }
+}
+
 dependencies {
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
-    // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+    //implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
+    implementation "maven.modrinth:yOy4oSzi:${irons_artifice}"
+    implementation "maven.modrinth:LNytGWDc:${create}"
 
-    // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
-    // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
-
-    // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
-
-    // Example project dependency using a sister or child project:
-    // implementation project(":myproject")
-
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -149,8 +151,13 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
+            mod_logo_file          : mod_logo_file,
             mod_license            : mod_license,
             mod_version            : mod_version,
+            geckolib_version       : geckolib_version,
+            irons_artifice         : irons_artifice,
+            create                 : create,
+            mod_description        : mod_description,
     ]
     inputs.properties replaceProperties
     expand replaceProperties

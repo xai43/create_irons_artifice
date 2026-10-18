@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "tag": "c:ingots/iron"
+    },
+    "B": {
+      "item": "irons_artifice:bullet"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "S*B",
+    " C*",
+    "C S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:hook_shot_modifier"
+  }
+}

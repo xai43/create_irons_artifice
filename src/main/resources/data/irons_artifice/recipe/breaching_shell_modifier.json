@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "irons_artifice:blackpowder"
+    },
+    "G": {
+      "item": "create:golden_sheet"
+    },
+    "R": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    " R ",
+    " B ",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:breaching_shell_modifier"
+  }
+}

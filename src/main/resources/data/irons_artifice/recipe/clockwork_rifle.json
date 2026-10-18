@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "tag": "c:ingots/netherite"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "C": {
+      "item": "irons_artifice:clockwork_components"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "R": {
+      "item": "minecraft:repeater"
+    }
+  },
+  "pattern": [
+    "N  ",
+    " PR",
+    " LC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:clockwork_rifle"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "irons_artifice:simple_mechanical_components"
+    },
+    "C": {
+      "item": "create:chute"
+    }
+  },
+  "pattern": [
+    "SCS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:gas_vent_modifier"
+  }
+}

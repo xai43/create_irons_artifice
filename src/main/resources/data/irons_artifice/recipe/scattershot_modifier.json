@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Z": {
+      "item": "create:crushed_raw_zinc"
+    },
+    "B": {
+      "item": "irons_artifice:bullet"
+    },
+    "P": {
+      "item": "irons_artifice:blackpowder"
+    },
+    "G": {
+      "item": "create:golden_sheet"
+    }
+  },
+  "pattern": [
+    " ZZ",
+    "PBZ",
+    "GP "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:scattershot_modifier"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_sword"
+    },
+    "*": {
+      "item": "irons_artifice:simple_mechanical_components"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "#",
+    "S",
+    "*"
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:bayonet_attachment_modifier"
+  }
+}

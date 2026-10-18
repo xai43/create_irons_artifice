@@ -1,0 +1,85 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:brass_sheet"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "chance": 120.0,
+      "id": "irons_artifice:clockwork_components"
+    },
+    {
+      "chance": 8.0,
+      "id": "create:zinc_nugget"
+    },
+    {
+      "chance": 8.0,
+      "id": "create:brass_nugget"
+    },
+    {
+      "chance": 6.0,
+      "id": "create:andesite_alloy"
+    },
+    {
+      "chance": 2.0,
+      "id": "create:crushed_raw_brass"
+    },
+    {
+      "id": "minecraft:clock"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_irons_artifice:incomplete_clockwork_components"
+        },
+        {
+          "item": "irons_artifice:mechanical_components"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_irons_artifice:incomplete_clockwork_components"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_irons_artifice:incomplete_clockwork_components"
+        },
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_irons_artifice:incomplete_clockwork_components"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_irons_artifice:incomplete_clockwork_components"
+        },
+        {
+          "item": "create:zinc_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_irons_artifice:incomplete_clockwork_components"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_irons_artifice:incomplete_clockwork_components"
+  }
+}

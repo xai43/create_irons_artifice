@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "irons_artifice:bullet"
+    },
+    "E": {
+      "item": "minecraft:spider_eye"
+    },
+    "P": {
+      "item": "minecraft:splash_potion"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    },
+    "G": {
+      "item": "create:golden_sheet"
+    }
+  },
+  "pattern": [
+    " EP",
+    "GDE",
+    "BG "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:venom_capsule_modifier"
+  }
+}

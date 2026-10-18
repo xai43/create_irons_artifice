@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "M": {
+      "item": "irons_artifice:simple_mechanical_components"
+    },
+    "N": [
+      {
+        "tag": "c:nuggets/iron"
+      },
+      {
+        "tag": "c:nuggets/zinc"
+      }
+    ]
+  },
+  "pattern": [
+    "ICN",
+    "CMC",
+    "NCI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:mechanical_components"
+  }
+}

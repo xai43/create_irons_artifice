@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "irons_artifice:blackpowder"
+    },
+    "G": {
+      "item": "create:golden_sheet"
+    },
+    "W": {
+      "item": "minecraft:wind_charge"
+    }
+  },
+  "pattern": [
+    "  W",
+    "GP ",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:wind_chamber_modifier"
+  }
+}

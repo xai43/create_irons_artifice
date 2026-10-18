@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "irons_artifice:simple_mechanical_components"
+    },
+    "C": {
+      "tag": "c:ingots/copper"
+    },
+    "N": {
+      "item": "create:copper_nugget"
+    }
+  },
+  "pattern": [
+    "S",
+    "C",
+    "N"
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:hair_trigger_modifier"
+  }
+}

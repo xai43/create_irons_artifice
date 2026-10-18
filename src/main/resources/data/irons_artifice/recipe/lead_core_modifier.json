@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "irons_artifice:bullet"
+    },
+    "O": {
+      "item": "create:powdered_obsidian"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    " O ",
+    " I ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:lead_core_modifier"
+  }
+}

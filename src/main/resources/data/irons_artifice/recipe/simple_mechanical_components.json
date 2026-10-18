@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "create:cogwheel"
+    },
+    "C": {
+      "tag": "c:ingots/copper"
+    },
+    "N": {
+      "item": "create:copper_nugget"
+    }
+  },
+  "pattern": [
+    " CN",
+    "CPC",
+    "NC "
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_artifice:simple_mechanical_components"
+  }
+}

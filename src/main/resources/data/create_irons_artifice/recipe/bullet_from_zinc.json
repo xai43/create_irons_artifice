@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:ingots/zinc"
+    },
+    "^": {
+      "item": "irons_artifice:blackpowder"
+    }
+  },
+  "pattern": [
+    "#",
+    "^"
+  ],
+  "result": {
+    "count": 8,
+    "id": "irons_artifice:bullet"
+  }
+}
