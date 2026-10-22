@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create_irons_artifice:charcoal_from_pulp"
+        "recipe": "create_arms_artifice:charcoal_from_pulp"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "create_irons_artifice:charcoal_from_pulp"
+      "create_arms_artifice:charcoal_from_pulp"
     ]
   }
 }
